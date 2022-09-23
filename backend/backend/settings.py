@@ -53,10 +53,11 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware'
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:5173',
+    'http://127.0.0.1:5173'
 )
 
 ROOT_URLCONF = 'backend.urls'
@@ -76,6 +77,9 @@ TEMPLATES = [
         },
     },
 ]
+
+# SECURITY WARNING: set secure ssl redirect to True in production!
+SECURE_SSL_REDIRECT = False
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
@@ -113,11 +117,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 

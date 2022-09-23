@@ -6,6 +6,7 @@ body {
   background-size: 40px 40px;
 }
 
+
 h1 {
   display: block;
   font-size: 2em;
@@ -28,7 +29,6 @@ img {
   display: block;
   font-size: 1em;
   font-weight: bold;
-  margin-bottom: 20px;
   position: fixed;
   width: 100%;
   left: 0;
@@ -45,7 +45,7 @@ img {
 
     body {
       background-color: #121212;
-      color: #fff;
+      color: #ededed;
     }
   
     .posts-container {
