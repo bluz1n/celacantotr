@@ -164,3 +164,6 @@ django_heroku.settings(locals())
 
 options = DATABASES['default'].get('OPTIONS', {})
 options.pop('sslmode', None)
+
+if os.path.exists('env.py'):
+        import env
