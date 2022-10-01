@@ -1,8 +1,12 @@
 import './App.css'
-import { Header } from './components/Header'
-import { ProfileImg } from './components/ProfileImg'
-import { Footer } from './components/Footer'
-import { PostsIndex } from './components/PostsIndex'
+import axios from 'axios';
+import { Header } from './components/Header';
+import { ProfileImg } from './components/ProfileImg';
+import { Footer } from './components/Footer';
+import { PostsIndex } from './components/PostsIndex';
+
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
 
 function App() {
  return (

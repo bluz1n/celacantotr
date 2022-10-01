@@ -6,7 +6,6 @@ body {
   background-size: 40px 40px;
 }
 
-
 h1 {
   display: block;
   font-size: 2em;
@@ -14,9 +13,11 @@ h1 {
   margin-bottom: 20px;
 }
 
-img {
+.Profile-Img {
   width: 100%;
+  height: auto;
   border-radius: 50%;
+  border: 2px solid #121212;
 }
 
 .posts-anchor {
@@ -47,6 +48,10 @@ img {
       background-color: #121212;
       color: #ededed;
     }
+
+    img {
+      border: 2px  solid #121212;
+    }
   
     .posts-container {
       background-color: #121212;
@@ -76,9 +81,8 @@ img {
     margin: 0 30%;
   }
 
-  img {
-    width: 20%;
-    border-radius: 20%;
+  .Profile-Img {
+    width: 30%;
   }
 
   .posts-container {
